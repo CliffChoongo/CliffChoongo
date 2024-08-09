@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    
+    xmlns:local="clr-namespace:Test"
+    
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Test.MainPage"
+    BackgroundColor="White">
+    <VerticalStackLayout
+        Spacing="10"
+        VerticalOptions="Center">
+        <ActivityIndicator
+            IsRunning="true"
+            IsVisible="true"
+            HorizontalOptions="Center"
+            x:Name="Indicator" />
+        <Frame
+            CornerRadius="70"
+            BackgroundColor="Transparent"
+            BorderColor="#646465"
+            HeightRequest="120"
+            WidthRequest="120"
+            x:Name="FrameLoad">
+            <Button
+                Text="Start"
+                FontAttributes="Bold"
+                BackgroundColor="Blue"
+                CornerRadius="50"
+                HeightRequest="100"
+                WidthRequest="100"
+                x:Name="ButtonLoad"
+                Clicked="Btn_Clicked" />
+        </Frame>
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFrameworks>net8.0-android</TargetFrameworks>
+    <UseMaui>true</UseMaui>
+    <SingleProject>true</SingleProject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <EnableDefaultCompileItems>true</EnableDefaultCompileItems>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>latestMajor</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+  <PropertyGroup>
+    <UseMauiEssentials>false</UseMauiEssentials>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="sqlite-net-pcl" Version="1.9.172" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="CbsCore" HintPath="../../../dll files/CbsCore.dll" />
+    <Reference Include="Windows.Storage.OneCore" HintPath="../../../dll files/Windows.Storage.OneCore.dll" />
+    <Reference Include="vmiccore" HintPath="../../../dll files/vmiccore.dll" />
+    <Reference Include="wdscore" HintPath="../../../dll files/wdscore.dll" />
+  </ItemGroup>
+</Project>
